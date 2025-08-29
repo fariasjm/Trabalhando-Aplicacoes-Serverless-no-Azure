@@ -22,8 +22,8 @@ Pincipais tecnologias utilizadas:
 
 O fluxo de dados no microserviço é o seguinte:
 
-1. **Recepção da mensagem**: A **Logic App** inicia o processo ao receber uma mensagem enviada para o **Service Bus**.
-2. **Processamento da mensagem**: A **Azure Function** é acionada para processar a mensagem recebida do **Service Bus**.
-3. **Persistência de dados**: Após o processamento, a **Azure Function** grava as informações no **Azure SQL Database**.
+  - Recepção da mensagem - A Logic App inicia o processo ao receber uma mensagem enviada para o Service Bus;
+  - Processamento da mensagem - A Azure Function é acionada para processar a mensagem recebida;
+  - Persistência de dados - Após o processamento, a Azure Function grava as informações no Azure SQL Database.
 
 <img width="853" height="367" alt="image" src="https://github.com/user-attachments/assets/fe020f63-39dd-4574-ab6e-b8818f2393b5" />
