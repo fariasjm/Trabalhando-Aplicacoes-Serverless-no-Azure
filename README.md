@@ -1,28 +1,22 @@
 # Trabalhando Aplicações Serverless na Azure
 
-## Descrição 📜
+Este projeto destaca as diferenças funcionais entre o Azure Functions, Logic Apps e WebJobs.
 
-Este projeto demonstra como trabalhar com **aplicações serverless** na **Azure**, utilizando serviços como **Logic Apps**, **Azure Functions**, **Azure SQL Database** e **Azure Service Bus**. O objetivo é criar um **microserviço** que:
+Definir um microserviço para:
 
-1. Recebe uma mensagem via **Service Bus**.
-2. Processa essa mensagem com uma **Azure Function**.
-3. Persiste os dados processados em um **Azure SQL Database**.
+  - Receber mensagens via Service Bus;
+  - Processar mensagens via Azure Function e
+  - Processar dados de um Azure SQL Database.
 
-Esse fluxo de trabalho totalmente serverless permite escalar facilmente, sem se preocupar com a infraestrutura subjacente.
+## Tecnologias Utilizadas
 
----
+Pincipais tecnologias utilizadas:
 
-## Tecnologias Utilizadas 🛠️
-
-Aqui estão as tecnologias principais utilizadas neste projeto:
-
-- **Azure Logic Apps** 🌐 - Para orquestrar o fluxo de dados.
-- **Azure Functions** 🔧 - Para processar mensagens e interagir com o banco de dados.
-- **Azure SQL Database** 💾 - Para persistir os dados processados.
-- **Azure Service Bus** 📨 - Para enviar e receber mensagens assíncronas.
-- **Azure Portal** 💻 - Para configuração e monitoramento de todos os recursos.
-
----
+  - Azure Logic Apps - Orquestrar o fluxo de dados;
+  - Azure Functions - Processar mensagens e interagir com o Banco de Dados
+  - Azure SQL Database - Persistir os dados processados
+  - Azure Service Bus - Enviar e receber mensagens assíncronas
+  - Azure Portal - Configuração e monitoramento dos recursos.
 
 ## Arquitetura do Sistema 📊
 
@@ -71,14 +65,5 @@ Utilizando **serviços totalmente gerenciados**, conseguimos criar uma solução
 
 ---
 
-## Reflexão 🧠
-A utilização de **Azure Functions** e **Logic Apps** oferece muitos benefícios:
 
-- **Foco no código**: Os desenvolvedores podem concentrar-se apenas na lógica de negócios.
-- **Mensageria assíncrona**: O uso do **Azure Service Bus** ajuda a desacoplar os componentes do sistema, permitindo escalabilidade e flexibilidade.
-- **Resiliência e escalabilidade**: A solução é resiliente a falhas e **altamente escalável**, ideal para sistemas distribuídos e baseados em eventos.
-
-Com esses recursos, você pode construir soluções mais ágeis, rápidas e fáceis de manter, aproveitando ao máximo o potencial da **nuvem** e da **arquitetura serverless**.
-
----
 
